@@ -1,15 +1,16 @@
 .flex-container{
+  margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     background-color: #333;
-    padding: 100px;
-    text-align: center;
-    
-
+    padding: 50px 10px;
 }
 h1{
     color: #ff004f;
+    margin-top: 0;
 }
 button{
     width: 180px;
@@ -33,13 +34,25 @@ button:hover{
 
 .info{
     font-size: 20px;
-    font-weight: 600;
-    color: #999;
-    text-shadow: 2px 2px 5px #111;
+    color: #eee;
+    line-height: 1.5;
+  
 
 }
 
-span{
-  color: #ff004f;
-    
+
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
