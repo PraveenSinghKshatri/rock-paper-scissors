@@ -88,7 +88,7 @@ function endGame() {
     resultDisplay.style.display = 'none';
 
     // Reset the game after 3 seconds
-    setTimeout(resetGame, 5000);
+    setTimeout(resetGame, 4000);
 
     
 }
