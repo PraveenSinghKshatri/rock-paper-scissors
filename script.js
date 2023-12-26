@@ -39,16 +39,18 @@ function playRound(playerSelection) {
 
     // Compare player and computer choices to determine the winner
     if (playerSelection === computerSelection) {
-        resultDisplay.textContent = 'It\'s a tie!';
+        resultDisplay.textContent = `It's a tie! Computer picked ${computerSelection}.`;
+        playerScore++;
+        computerScore++;
     } else if (
         (playerSelection === 'rock' && computerSelection === 'scissors') ||
         (playerSelection === 'paper' && computerSelection === 'rock') ||
         (playerSelection === 'scissors' && computerSelection === 'paper')
     ) {
-        resultDisplay.textContent = 'You win!';
+        resultDisplay.textContent = `You win! Computer picked ${computerSelection}.`;
         playerScore++;
     } else {
-        resultDisplay.textContent = 'You lose!';
+        resultDisplay.textContent = `You lose! Computer picked ${computerSelection}.`;
         computerScore++;
     }
 
@@ -60,7 +62,7 @@ function playRound(playerSelection) {
     roundsPlayed++;
 
     // Check if 5 rounds have been played
-    if (roundsPlayed === 5) {
+    if (playerScore === 5 || computerScore === 5) {
         endGame();
     }
 }
@@ -86,7 +88,7 @@ function endGame() {
     resultDisplay.style.display = 'none';
 
     // Reset the game after 3 seconds
-    setTimeout(resetGame, 7000);
+    setTimeout(resetGame, 5000);
 
     
 }
