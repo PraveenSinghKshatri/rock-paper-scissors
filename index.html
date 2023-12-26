@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-
-    <div class="flex-container">
-        <h1>Rock Paper Scissors</h1>
-        <button onclick="game()">Start Game</button>
-        <p class="info">This game is played in the console. 
-            <br>
-        On Windows/Linux press " <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>J</kbd> " to open the console.
-       <br>
-        On Mac, press  " <kbd>Option</kbd> + <kbd>J</kbd> " to open the console.
-        </p>
+    <div id="game">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        <div id="result">Result:</div>
+        <div id="playerScore">Score: 0</div>
+        <div id="computerScore">Score: 0</div>
+        <div id="gameOver"></div>
     </div>
 
-
-
+    <!-- This is JS -->
+    <script src="script.js"></script>
 
 </body>
-<script src="main.js"></script>
 
 </html>
