@@ -70,7 +70,7 @@ button:hover {
   transition: 0.2s;
 }
 
-.fa-github{
-  font-size: 22px;
-
+#footer{
+  margin-top: 20px;
+  font-size:18px;
 }
