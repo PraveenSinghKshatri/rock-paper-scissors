@@ -1,7 +1,6 @@
 // Initialize scores
 let playerScore = 0;
 let computerScore = 0;
-let roundsPlayed = 0;
 
 
 // Get the buttons and result display element
@@ -58,9 +57,6 @@ function playRound(playerSelection) {
     playerScoreDisplay.textContent = `Your Score: ${playerScore}`;
     computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
-    // Increment the rounds counter
-    roundsPlayed++;
-
     // Check if 5 rounds have been played
     if (playerScore === 5 || computerScore === 5) {
         endGame();
@@ -102,7 +98,6 @@ function resetGame() {
     // Reset scores and rounds
     playerScore = 0;
     computerScore = 0;
-    roundsPlayed = 0;
    
 
     // Clear the "Game Over" message
