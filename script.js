@@ -116,3 +116,10 @@ function resetGame() {
     playerScoreDisplay.textContent = `Your Score: ${playerScore}`;
     computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 }
+
+// JavaScript to display the range of years in the copyright notice
+ const copyrightYearElement = document.getElementById('copyright-year');
+ const startYear = 2023;
+ const currentYear = new Date().getFullYear();
+ const yearRange = (startYear === currentYear) ? currentYear : `${startYear} - ${currentYear}`;
+ copyrightYearElement.textContent = yearRange;
